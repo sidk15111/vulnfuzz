@@ -1,0 +1,15 @@
+# Placeholder values below - edit homepage/primary_contact if you ever
+# check this into a real OSS-Fuzz-style pipeline. main_repo is omitted
+# since this project is self-contained (source lives in this directory,
+# not a separately cloned repo).
+homepage: "https://example.com/vulnfuzz"
+language: c
+primary_contact: "you@example.com"
+sanitizers:
+  - address
+  - undefined
+architectures:
+  - x86_64
+fuzzing_engines:
+  - libfuzzer
+  - afl
